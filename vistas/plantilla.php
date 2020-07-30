@@ -117,7 +117,7 @@
 
 <!--=====================================
     CUERPO DOCUMENTO
-    ======================================-->
+  ======================================-->
 
 <body class="hold-transition skin-blue sidebar-collapse sidebar-mini login-page">
 
@@ -170,7 +170,7 @@
   } else {
     
     include "modulos/login.php";
-    include "modulos/popup.php";
+    
   }
   ?>
 
