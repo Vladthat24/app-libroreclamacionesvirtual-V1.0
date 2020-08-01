@@ -143,7 +143,7 @@
 
                                 <span class="input-group-addon"><i class="fa fa-id-card"></i></span>
 
-                                <input type="number" class="form-control input-lx dni" maxlength="8" id="dniLigitimado" name="dniLigitimado" placeholder="Documento de Identidad" required>
+                                <input type="text" class="form-control input-lx dni"  id="dniLigitimado" name="dniLigitimado" placeholder="Documento de Identidad" required readonly>
 
 
                                 <span class="input-group-addon">
@@ -263,7 +263,7 @@
 
                                 <span class="input-group-addon"><i class="fa fa-angle-double-up"></i></span>
 
-                                <select class="form-control input-lx" name="nuevTipoDocumento">
+                                <select class="form-control input-lx" id="nuevTipoDocumento" name="nuevTipoDocumento">
 
                                     <option value="">Selecionar Tipo Documento</option>
 
@@ -287,7 +287,7 @@
 
                                 <span class="input-group-addon"><i class="fa fa-id-card"></i></span>
 
-                                <input type="number" class="form-control input-lx dni" maxlength="9" id="dni" name="dni" placeholder="Documento de Identidad">
+                                <input type="text" class="form-control input-lx dni" id="dni" name="dni" placeholder="Documento de Identidad" readonly>
 
 
                                 <span class="input-group-addon">

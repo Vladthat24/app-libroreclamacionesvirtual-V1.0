@@ -30,22 +30,55 @@ $("#nuevEstablecimientoSelectSearch").change(function () {
 })
 
 /*=============================================
- CAPTURANDO LA TIPO DE DOCUMENTO PARA ASIGNAR CÓDIGO - NUEVA
+ VALIDANDO INGRESO DE SOLO NUMERO EL INPUT DE DNI LIGITIMADO
+ =============================================*/
+$('#dniLigitimado').keyup(function (){
+    this.value = (this.value + '').replace(/[^0-9]/g, '');
+  });
+/*=============================================
+ VALIDANDO CUANDO ES DNI - CARNET - PASAPORTE LIGITIMADO
  =============================================*/
 $("#nuevTipoDocumentoLigitimado").change(function () {
-
+    $('#dniLigitimado').removeAttr('readonly');
     var tipoDocumento = $('#nuevTipoDocumentoLigitimado option:selected').html();
     /* console.log(tipoDocumento); */
     if (tipoDocumento !== "DNI") {
-        $(".dni").removeAttr("maxlength");
+        
+        
+        $("#dniLigitimado").removeAttr("maxlength");
     } else {
-        $(".dni").val('');
-        $(".dni").attr("maxlength", "8");
+        console.log("DNI");
+        $("#dniLigitimado").val('');
+        $("#dniLigitimado").attr("maxlength", "8");
     }
 
 })
 
 
+/*=============================================
+ VALIDANDO INGRESO DE SOLO NUMERO EL INPUT DE DNI
+ =============================================*/
+ $('#dni').keyup(function (){
+    this.value = (this.value + '').replace(/[^0-9]/g, '');
+  });
+/*=============================================
+ VALIDANDO CUANDO ES DNI - CARNET - PASAPORTE 
+ =============================================*/
+$("#nuevTipoDocumento").change(function () {
+    $('#dni').removeAttr('readonly');
+    var tipoDocumento = $('#nuevTipoDocumento option:selected').html();
+    /* console.log(tipoDocumento); */
+    if (tipoDocumento !== "DNI") {
+        
+        
+        $("#dni").removeAttr("maxlength");
+    } else {
+        console.log("DNI");
+        $("#dni").val('');
+        $("#dni").attr("maxlength", "8");
+    }
+
+})
 /*=============================================
  CAPTURANDO LA CATEGORIA PARA ASIGNAR CÓDIGO - EDITAR
  =============================================*/
