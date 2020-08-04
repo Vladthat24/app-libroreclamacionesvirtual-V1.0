@@ -176,18 +176,14 @@ class ControladorReclamo
                                     <tr>
                                         <td colspan='4' style='padding:15px;'>
                                             <hr />
-                                            <p style='font-size:20px;' text-align='center'><strong>Numero de Reclamo - 00" . $num_reclamo
-                . "</strong></p>
+                                            <p style='font-size:20px;' text-align='center'><strong>Numero de Reclamo - 00" . $num_reclamo. "</strong></p>
                                             <hr />
                                             <hr />
-                                            <p style='font-size:20px;'><strong>IDENTIFICACION DEL USUARIO O TERCERO
-                                                    LEGITIMADO</strong></p>
+                                            <p style='font-size:20px;'><strong>IDENTIFICACION DEL USUARIO O TERCERO LEGITIMADO</strong></p>
                                             <hr />
-                                            <p style='font-size:20px;'>Tipo Documento : " . $_POST["nuevTipoDocumentoLigitimado"] .
-                "</p>
+                                            <p style='font-size:20px;'>Tipo Documento : " . $_POST["nuevTipoDocumentoLigitimado"] ."</p>
                                             <p style='font-size:20px;'>N&°acute de Documento : " . $_POST["dniLigitimado"] . "</p>
-                                            <p style='font-size:20px;'>Nombre de Documento : " . $_POST["nuevNombreLigitimado"] . "
-                                            </p>
+                                            <p style='font-size:20px;'>Nombre de Documento : " . $_POST["nuevNombreLigitimado"] . "</p>
                                             <p style='font-size:20px;'>Telefono : " . $_POST["nuevTelefonoLigitimado"] . "</p>
                                             <p style='font-size:20px;'>Correo : " . $_POST["nuevEmailLigitimado"] . "</p>
                                             <p style='font-size:20px;'>Distrito : " . $_POST["nuevDistritoLigitimado"] . "</p>
@@ -208,10 +204,6 @@ class ControladorReclamo
                                             <hr />
                                             <p style='font-size:20px;'>" . $_POST["nuevDescripcion"] . "</p>
                                             <p style='font-size:25px;'>Direccion de Redes Integradas de Salud Lima Sur</p>
-            <!--                                 <img src='https://www.dirislimasur.gob.pe/wp-content/uploads/2020/07/logoemail.jpg'
-                                                alt='Direccion de Redes Integradas de Salud Lima Sur'
-                                                title='Dirección de Redes Integradas de Salud Lima Sur'
-                                                style='height:auto; width:100%; max-width:100%;' /> -->
                                             <hr />
                                         </td>
                                     </tr>
@@ -229,7 +221,7 @@ class ControladorReclamo
             </html>";
 
 
-            $EnviadoPor = "libroreclamaciones_envio@dirislimasur.gob.pe";
+            $EnviadoPor = "ymendieta@dirislimasur.gob.pe";
             $NombreEnviado = "LIBRO DE RECLAMACIONES VIRUTAL";
             $host = "smtp.gmail.com";
             $port = 587;
